@@ -1,24 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { TimeScale } from "./components/timeScale/timeScale";
+import { Week } from "./components/week/week";
+import { useCalendarReducer } from "./hooks/useCalendarReducer";
+import { generateCalendar } from "./init/generateCalendar";
 
 function App() {
+  const calendar = generateCalendar(new Date());
+  const { state, updateSlot } = useCalendarReducer();
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <span className="times">
+        <TimeScale calendar={calendar}></TimeScale>
+      </span>
+      <div className="week">
+        <Week days={state} onTimeSlotClick={updateSlot}></Week>
+      </div>
     </div>
   );
 }

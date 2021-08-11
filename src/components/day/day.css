@@ -1,0 +1,29 @@
+.time-slot {
+  min-width: 100px;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  display: block;
+  border: 1px solid black;
+}
+.available {
+  background-color: white;
+}
+.unavailable {
+  background-color: red;
+}
+.lunch-break {
+  background-color: yellow;
+}
+.reserved {
+  background-color: greenyellow;
+}
+.not-working {
+  background-color: gray;
+}
+ul {
+  list-style: none;
+  padding: 5px;
+  margin: 0;
+  display: grid;
+}

@@ -1,0 +1,11 @@
+.day {
+  display: grid;
+  grid-auto-flow: row;
+  grid-auto-columns: auto;
+}
+li {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  display: block;
+}
