@@ -9,8 +9,8 @@ export const Week: React.FC<{ days: Day[]; onTimeSlotClick: any }> = ({
 }) => {
   return (
     <React.Fragment>
-      {days.map((day) => (
-        <div className="day">
+      {days.map((day, index) => (
+        <div key={index} className="day">
           <span>{day.date.toLocaleDateString("hr")}</span>
           <DayComponent
             day={day}

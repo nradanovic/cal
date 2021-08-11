@@ -32,7 +32,7 @@ export default function DayComponent({
 
   const timeSlotStatusCssClass = (slot: Slot) =>
     getCssClassForStatus(slot.status);
-    
+
   const timeSlotCssClasses = (slot: Slot) =>
     `${fixedTimeSlotCssClass} ${timeSlotStatusCssClass(slot)}`;
 
@@ -48,8 +48,12 @@ export default function DayComponent({
   return (
     <ul>
       {" "}
-      {day.timeSlots.map((slot) => (
-        <li className={timeSlotCssClasses(slot)} onClick={() => onClick(slot)}>
+      {day.timeSlots.map((slot, index) => (
+        <li
+          key={index}
+          className={timeSlotCssClasses(slot)}
+          onClick={() => onClick(slot)}
+        >
           <TimeSlot slot={slot}></TimeSlot>
         </li>
       ))}
