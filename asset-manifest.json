@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/nradanovic/cal/static/css/main.8df74768.chunk.css",
+    "main.js": "/nradanovic/cal/static/js/main.546c0058.chunk.js",
+    "main.js.map": "/nradanovic/cal/static/js/main.546c0058.chunk.js.map",
+    "runtime-main.js": "/nradanovic/cal/static/js/runtime-main.2fb9f587.js",
+    "runtime-main.js.map": "/nradanovic/cal/static/js/runtime-main.2fb9f587.js.map",
+    "static/js/2.995286be.chunk.js": "/nradanovic/cal/static/js/2.995286be.chunk.js",
+    "static/js/2.995286be.chunk.js.map": "/nradanovic/cal/static/js/2.995286be.chunk.js.map",
+    "static/js/3.068ad5a9.chunk.js": "/nradanovic/cal/static/js/3.068ad5a9.chunk.js",
+    "static/js/3.068ad5a9.chunk.js.map": "/nradanovic/cal/static/js/3.068ad5a9.chunk.js.map",
+    "index.html": "/nradanovic/cal/index.html",
+    "static/css/main.8df74768.chunk.css.map": "/nradanovic/cal/static/css/main.8df74768.chunk.css.map",
+    "static/js/2.995286be.chunk.js.LICENSE.txt": "/nradanovic/cal/static/js/2.995286be.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2fb9f587.js",
+    "static/js/2.995286be.chunk.js",
+    "static/css/main.8df74768.chunk.css",
+    "static/js/main.546c0058.chunk.js"
+  ]
+}
