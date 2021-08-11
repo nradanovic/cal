@@ -29,8 +29,10 @@ export default function DayComponent({
   onTimeSlotClick: any;
 }) {
   const fixedTimeSlotCssClass = "time-slot";
+
   const timeSlotStatusCssClass = (slot: Slot) =>
     getCssClassForStatus(slot.status);
+    
   const timeSlotCssClasses = (slot: Slot) =>
     `${fixedTimeSlotCssClass} ${timeSlotStatusCssClass(slot)}`;
 
